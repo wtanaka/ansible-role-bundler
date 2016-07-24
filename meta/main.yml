@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Wesley Tanaka
-  description: Install bundler on ubuntu
+  description: Install bundler
   company: http://wtanaka.com
   license: GPLv2
   min_ansible_version: 1.5.4
