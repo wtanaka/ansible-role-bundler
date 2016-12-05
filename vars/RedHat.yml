@@ -1,2 +1,3 @@
 ---
-bundler_package_name: rubygem-bundler
+package_names:
+- rubygem-bundler

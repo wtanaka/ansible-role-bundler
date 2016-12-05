@@ -1,2 +1,3 @@
 ---
-bundler_package_name: bundler
+package_names:
+- bundler
