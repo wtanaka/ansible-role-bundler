@@ -4,14 +4,22 @@
 wtanaka.bundler
 ===============
 
-Install bundler
+Install Bundler.
+
+Bundler provides a consistent environment for Ruby projects by
+tracking and installing the exact gems and versions that are needed.
 
 Example Playbook
 ----------------
 
     - hosts: all
       roles:
-         - bundler
+         - role: wtanaka.bundler
+
+License
+-------
+
+GPLv2
 
 Author Information
 ------------------
