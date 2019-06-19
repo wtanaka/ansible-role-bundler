@@ -1,7 +1,13 @@
 ---
+- name: check for short-circuit
+  raw: "> /dev/null command -v bundle;"
+  register: installed
+  ignore_errors: True
+  changed_when: False
+
+- name: set should_run fact
+  set_fact:
+    should_run: "{{installed|failed or not bundler_should_shortcircuit}}"
+
 - include: include_vars.yml
-
-- include: compat.yml
-
-- include: Debian.yml
-  when: ansible_os_family == 'Debian'
+- include: sudoorbecome.yml
